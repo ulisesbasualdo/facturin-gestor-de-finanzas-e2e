@@ -1,0 +1,21 @@
+{
+  "name": "facturin-test-auto",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tests end-to-end de Facturín: levantan el backend y el frontend y usan la app en un Chromium real.",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "mysql2": "^3.24.6",
+    "typescript": "^7.0.2"
+  }
+}
